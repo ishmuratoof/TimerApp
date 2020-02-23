@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         //MARK: Setting up current date
         let calendar = Calendar.current
@@ -48,72 +47,79 @@ class ViewController: UIViewController {
 
         mainLabel.text = "\(weekday), \(dateFormatter.string(from: date))"
         
-        let firstStart = calendar.date(bySettingHour: 08, minute: 00, second: 00, of: date)
-        let sixthEnd = calendar.date(bySettingHour: 19, minute: 30, second: 00, of: date)
-                                    
-        let firstBreakStart = calendar.date(bySettingHour: 09, minute: 35, second: 00, of: date)
-        let firstBreakEnd = calendar.date(bySettingHour: 09, minute: 45, second: 00, of: date)
-        let secondBreakStart = calendar.date(bySettingHour: 11, minute: 20, second: 00, of: date)
-        let secondBreakEnd = calendar.date(bySettingHour: 12, minute: 10, second: 00, of: date)
-        let thirdBreakStart = calendar.date(bySettingHour: 13, minute: 45, second: 00, of: date)
-        let thirdBreakEnd = calendar.date(bySettingHour: 13, minute: 55, second: 00, of: date)
-        let fourthBreakStart = calendar.date(bySettingHour: 15, minute: 30, second: 00, of: date)
-        let fourthBreakEnd = calendar.date(bySettingHour: 16, minute: 10, second: 00, of: date)
-        let fifthBreakStart = calendar.date(bySettingHour: 17, minute: 45, second: 00, of: date)
-        let fifthBreakEnd = calendar.date(bySettingHour: 17, minute: 55, second: 00, of: date)
-
-        let lessons = [
-            calendar.date(bySettingHour: 09, minute: 35, second: 00, of: date),
-            calendar.date(bySettingHour: 11, minute: 20, second: 00, of: date),
-            calendar.date(bySettingHour: 13, minute: 45, second: 00, of: date),
-            calendar.date(bySettingHour: 15, minute: 30, second: 00, of: date),
-            calendar.date(bySettingHour: 17, minute: 45, second: 00, of: date),
-            calendar.date(bySettingHour: 19, minute: 30, second: 00, of: date)
-        ]
-        
+        timer()
+    }
         
         //MARK: Setting up the timer
         
-        _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+        func timer() {
+            let calendar = Calendar.current
+            let dateFormatter = DateFormatter()
             let date = Date()
-            
+            let weekdayNumber = calendar.component(.weekday, from: date)
             dateFormatter.dateFormat = "HHmmss"
             
+            let firstStart = calendar.date(bySettingHour: 08, minute: 00, second: 00, of: date)
+            let sixthEnd = calendar.date(bySettingHour: 19, minute: 30, second: 00, of: date)
+                                               
+            let firstBreakStart = calendar.date(bySettingHour: 09, minute: 35, second: 00, of: date)
+            let firstBreakEnd = calendar.date(bySettingHour: 09, minute: 45, second: 00, of: date)
+            let secondBreakStart = calendar.date(bySettingHour: 11, minute: 20, second: 00, of: date)
+            let secondBreakEnd = calendar.date(bySettingHour: 12, minute: 10, second: 00, of: date)
+            let thirdBreakStart = calendar.date(bySettingHour: 13, minute: 45, second: 00, of: date)
+            let thirdBreakEnd = calendar.date(bySettingHour: 13, minute: 55, second: 00, of: date)
+            let fourthBreakStart = calendar.date(bySettingHour: 15, minute: 30, second: 00, of: date)
+            let fourthBreakEnd = calendar.date(bySettingHour: 16, minute: 10, second: 00, of: date)
+            let fifthBreakStart = calendar.date(bySettingHour: 17, minute: 45, second: 00, of: date)
+            let fifthBreakEnd = calendar.date(bySettingHour: 17, minute: 55, second: 00, of: date)
+
+            let lessons = [
+                calendar.date(bySettingHour: 09, minute: 35, second: 00, of: date),
+                calendar.date(bySettingHour: 11, minute: 20, second: 00, of: date),
+                calendar.date(bySettingHour: 13, minute: 45, second: 00, of: date),
+                calendar.date(bySettingHour: 15, minute: 30, second: 00, of: date),
+                calendar.date(bySettingHour: 17, minute: 45, second: 00, of: date),
+                calendar.date(bySettingHour: 19, minute: 30, second: 00, of: date)
+            ]
+            
             //Check whether there are no lessons
-            guard (weekday != "Воскресенье") else {
-                self.timerLabel.text = "Выходной 🥳"
+            guard (weekdayNumber != 1) else {
+                timerLabel.text = "Выходной 🥳"
                 return
             }
 
             if (dateFormatter.string(from: date) < dateFormatter.string(from: firstStart!)) || (dateFormatter.string(from: date) > dateFormatter.string(from: sixthEnd!)) {
-                self.timerLabel.text = "Сейчас пар нет"
+                timerLabel.text = "Сейчас пар нет"
+                return
             }
 
             if (dateFormatter.string(from: date) > dateFormatter.string(from: firstBreakStart!)) && (dateFormatter.string(from: date) < dateFormatter.string(from: firstBreakEnd!)) {
-                self.timerLabel.text = "Перерыв"
+                timerLabel.text = "Перерыв"
                 return
             }
 
             if (dateFormatter.string(from: date) > dateFormatter.string(from: secondBreakStart!)) && (dateFormatter.string(from: date) < dateFormatter.string(from: secondBreakEnd!)) {
-                self.timerLabel.text = "Перерыв"
+                timerLabel.text = "Перерыв"
                 return
             }
 
             if (dateFormatter.string(from: date) > dateFormatter.string(from: thirdBreakStart!)) && (dateFormatter.string(from: date) < dateFormatter.string(from: thirdBreakEnd!)) {
-                self.timerLabel.text = "Перерыв"
+                timerLabel.text = "Перерыв"
                 return
             }
 
             if (dateFormatter.string(from: date) > dateFormatter.string(from: fourthBreakStart!)) && (dateFormatter.string(from: date) < dateFormatter.string(from: fourthBreakEnd!)) {
-                self.timerLabel.text = "Перерыв"
+                timerLabel.text = "Перерыв"
                 return
             }
 
             if (dateFormatter.string(from: date) > dateFormatter.string(from: fifthBreakStart!)) && (dateFormatter.string(from: date) < dateFormatter.string(from: fifthBreakEnd!)) {
-                self.timerLabel.text = "Перерыв"
+                timerLabel.text = "Перерыв"
                 return
             }
             
+        _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            let date = Date()
             var timer: DateInterval
             var hour: Int
             var minute: Int
@@ -140,7 +146,5 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
 }
 
