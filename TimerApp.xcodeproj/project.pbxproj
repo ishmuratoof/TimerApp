@@ -128,8 +128,8 @@
 				8E3B341E24004912003C7EF9 /* AppDelegate.swift */,
 				8E3B342024004912003C7EF9 /* SceneDelegate.swift */,
 				8E3B342224004912003C7EF9 /* ViewController.swift */,
-				8E3B342424004912003C7EF9 /* Main.storyboard */,
 				8E3B342724004914003C7EF9 /* Assets.xcassets */,
+				8E3B342424004912003C7EF9 /* Main.storyboard */,
 				8E3B342924004914003C7EF9 /* LaunchScreen.storyboard */,
 				8E3B342C24004914003C7EF9 /* Info.plist */,
 			);
