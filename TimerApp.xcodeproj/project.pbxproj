@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E3975262402694F00F54209 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3975252402694F00F54209 /* NotificationCenter.framework */; };
+		8E3975292402694F00F54209 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3975282402694F00F54209 /* TodayViewController.swift */; };
+		8E39752C2402694F00F54209 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E39752A2402694F00F54209 /* MainInterface.storyboard */; };
+		8E3975302402695000F54209 /* Tаймер.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E3975232402694F00F54209 /* Tаймер.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8E3B341F24004912003C7EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B341E24004912003C7EF9 /* AppDelegate.swift */; };
 		8E3B342124004912003C7EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B342024004912003C7EF9 /* SceneDelegate.swift */; };
 		8E3B342324004912003C7EF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B342224004912003C7EF9 /* ViewController.swift */; };
@@ -19,10 +23,17 @@
 		8E3B344624004B79003C7EF9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B344524004B79003C7EF9 /* InterfaceController.swift */; };
 		8E3B344824004B79003C7EF9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B344724004B79003C7EF9 /* ExtensionDelegate.swift */; };
 		8E3B344A24004B7B003C7EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B344924004B7B003C7EF9 /* Assets.xcassets */; };
-		8E3B344E24004B7B003C7EF9 /* TimerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8E3B343424004B74003C7EF9 /* TimerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E3B344E24004B7B003C7EF9 /* Таймер.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8E3B343424004B74003C7EF9 /* Таймер.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8E39752E2402695000F54209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E3B341324004912003C7EF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E3975222402694F00F54209;
+			remoteInfo = "TimerApp Extension";
+		};
 		8E3B344224004B79003C7EF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8E3B341324004912003C7EF9 /* Project object */;
@@ -40,6 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8E3975312402695000F54209 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E3975302402695000F54209 /* Tаймер.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E3B345224004B7B003C7EF9 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,7 +79,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				8E3B344E24004B7B003C7EF9 /* TimerWatch.app in Embed Watch Content */,
+				8E3B344E24004B7B003C7EF9 /* Таймер.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +87,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E3975232402694F00F54209 /* Tаймер.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tаймер.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3975252402694F00F54209 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		8E3975282402694F00F54209 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		8E39752B2402694F00F54209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8E39752D2402695000F54209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E3B341B24004912003C7EF9 /* Таймер.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Таймер.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3B341E24004912003C7EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3B342024004912003C7EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +100,7 @@
 		8E3B342724004914003C7EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3B342A24004914003C7EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E3B342C24004914003C7EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E3B343424004B74003C7EF9 /* TimerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3B343424004B74003C7EF9 /* Таймер.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Таймер.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3B343724004B74003C7EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8E3B343924004B78003C7EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3B343B24004B78003C7EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +112,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E3975202402694F00F54209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3975262402694F00F54209 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E3B341824004912003C7EF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,12 +137,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E3975242402694F00F54209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E3975252402694F00F54209 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E3975272402694F00F54209 /* TimerApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E3975282402694F00F54209 /* TodayViewController.swift */,
+				8E39752A2402694F00F54209 /* MainInterface.storyboard */,
+				8E39752D2402695000F54209 /* Info.plist */,
+			);
+			path = "TimerApp Extension";
+			sourceTree = "<group>";
+		};
 		8E3B341224004912003C7EF9 = {
 			isa = PBXGroup;
 			children = (
 				8E3B341D24004912003C7EF9 /* TimerApp */,
 				8E3B343524004B74003C7EF9 /* TimerWatch */,
 				8E3B344424004B79003C7EF9 /* TimerWatch Extension */,
+				8E3975272402694F00F54209 /* TimerApp Extension */,
+				8E3975242402694F00F54209 /* Frameworks */,
 				8E3B341C24004912003C7EF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,8 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				8E3B341B24004912003C7EF9 /* Таймер.app */,
-				8E3B343424004B74003C7EF9 /* TimerWatch.app */,
+				8E3B343424004B74003C7EF9 /* Таймер.app */,
 				8E3B344024004B79003C7EF9 /* TimerWatch Extension.appex */,
+				8E3975232402694F00F54209 /* Tаймер.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +216,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E3975222402694F00F54209 /* TimerApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3975342402695000F54209 /* Build configuration list for PBXNativeTarget "TimerApp Extension" */;
+			buildPhases = (
+				8E39751F2402694F00F54209 /* Sources */,
+				8E3975202402694F00F54209 /* Frameworks */,
+				8E3975212402694F00F54209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TimerApp Extension";
+			productName = "TimerApp Extension";
+			productReference = 8E3975232402694F00F54209 /* Tаймер.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8E3B341A24004912003C7EF9 /* TimerApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E3B342F24004914003C7EF9 /* Build configuration list for PBXNativeTarget "TimerApp" */;
@@ -168,11 +241,13 @@
 				8E3B341824004912003C7EF9 /* Frameworks */,
 				8E3B341924004912003C7EF9 /* Resources */,
 				8E3B345624004B7B003C7EF9 /* Embed Watch Content */,
+				8E3975312402695000F54209 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				8E3B344D24004B7B003C7EF9 /* PBXTargetDependency */,
+				8E39752F2402695000F54209 /* PBXTargetDependency */,
 			);
 			name = TimerApp;
 			productName = TimerApp;
@@ -193,7 +268,7 @@
 			);
 			name = TimerWatch;
 			productName = TimerWatch;
-			productReference = 8E3B343424004B74003C7EF9 /* TimerWatch.app */;
+			productReference = 8E3B343424004B74003C7EF9 /* Таймер.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		8E3B343F24004B79003C7EF9 /* TimerWatch Extension */ = {
@@ -223,11 +298,15 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Kamil;
 				TargetAttributes = {
+					8E3975222402694F00F54209 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					8E3B341A24004912003C7EF9 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 					8E3B343324004B74003C7EF9 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					8E3B343F24004B79003C7EF9 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -250,11 +329,20 @@
 				8E3B341A24004912003C7EF9 /* TimerApp */,
 				8E3B343324004B74003C7EF9 /* TimerWatch */,
 				8E3B343F24004B79003C7EF9 /* TimerWatch Extension */,
+				8E3975222402694F00F54209 /* TimerApp Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8E3975212402694F00F54209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E39752C2402694F00F54209 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E3B341924004912003C7EF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +373,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8E39751F2402694F00F54209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3975292402694F00F54209 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8E3B341724004912003C7EF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +403,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8E39752F2402695000F54209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E3975222402694F00F54209 /* TimerApp Extension */;
+			targetProxy = 8E39752E2402695000F54209 /* PBXContainerItemProxy */;
+		};
 		8E3B344324004B79003C7EF9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8E3B343F24004B79003C7EF9 /* TimerWatch Extension */;
@@ -320,6 +421,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8E39752A2402694F00F54209 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E39752B2402694F00F54209 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		8E3B342424004912003C7EF9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,6 +456,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8E3975322402695000F54209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9M439B4KG;
+				INFOPLIST_FILE = "TimerApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "velvetmoustache.TimerApp.TimerApp-Extension";
+				PRODUCT_NAME = "Tаймер";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E3975332402695000F54209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9M439B4KG;
+				INFOPLIST_FILE = "TimerApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "velvetmoustache.TimerApp.TimerApp-Extension";
+				PRODUCT_NAME = "Tаймер";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8E3B342D24004914003C7EF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +611,7 @@
 		8E3B343024004914003C7EF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9M439B4KG;
@@ -472,6 +620,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp;
 				PRODUCT_NAME = "Таймер";
 				SWIFT_VERSION = 5.0;
@@ -482,6 +631,7 @@
 		8E3B343124004914003C7EF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9M439B4KG;
@@ -490,6 +640,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp;
 				PRODUCT_NAME = "Таймер";
 				SWIFT_VERSION = 5.0;
@@ -546,14 +697,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9M439B4KG;
 				IBSC_MODULE = TimerWatch_Extension;
 				INFOPLIST_FILE = TimerWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Таймер";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TimerWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -565,14 +725,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9M439B4KG;
 				IBSC_MODULE = TimerWatch_Extension;
 				INFOPLIST_FILE = TimerWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Таймер";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TimerWatch-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -582,6 +750,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E3975342402695000F54209 /* Build configuration list for PBXNativeTarget "TimerApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3975322402695000F54209 /* Debug */,
+				8E3975332402695000F54209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8E3B341624004912003C7EF9 /* Build configuration list for PBXProject "TimerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
