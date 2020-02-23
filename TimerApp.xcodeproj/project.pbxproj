@@ -65,7 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8E3B341B24004912003C7EF9 /* TimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3B341B24004912003C7EF9 /* Таймер.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Таймер.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3B341E24004912003C7EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3B342024004912003C7EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E3B342224004912003C7EF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		8E3B341C24004912003C7EF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E3B341B24004912003C7EF9 /* TimerApp.app */,
+				8E3B341B24004912003C7EF9 /* Таймер.app */,
 				8E3B343424004B74003C7EF9 /* TimerWatch.app */,
 				8E3B344024004B79003C7EF9 /* TimerWatch Extension.appex */,
 			);
@@ -176,7 +176,7 @@
 			);
 			name = TimerApp;
 			productName = TimerApp;
-			productReference = 8E3B341B24004912003C7EF9 /* TimerApp.app */;
+			productReference = 8E3B341B24004912003C7EF9 /* Таймер.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8E3B343324004B74003C7EF9 /* TimerWatch */ = {
@@ -473,7 +473,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Таймер";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,7 +491,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Таймер";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

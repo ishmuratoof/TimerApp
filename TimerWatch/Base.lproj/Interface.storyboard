@@ -11,13 +11,11 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TimerWatch" customModuleProvider="target">
                     <items>
-                        <timer alignment="left" previewedSeconds="3610" id="oPi-5K-Ecz"/>
                         <label alignment="center" verticalAlignment="center" textAlignment="center" id="TAB-ie-SVm">
-                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
                         </label>
                     </items>
                     <connections>
-                        <outlet property="timer" destination="oPi-5K-Ecz" id="R8n-i4-vqX"/>
                         <outlet property="timerLabel" destination="TAB-ie-SVm" id="p2u-Yt-hTN"/>
                     </connections>
                 </controller>

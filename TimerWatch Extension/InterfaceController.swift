@@ -13,7 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var timerLabel: WKInterfaceLabel!
-    @IBOutlet var timer: WKInterfaceTimer!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
