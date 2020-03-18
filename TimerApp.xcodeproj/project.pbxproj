@@ -467,6 +467,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "velvetmoustache.TimerApp.TimerApp-Extension";
 				PRODUCT_NAME = "Tаймер";
 				SKIP_INSTALL = YES;
@@ -486,6 +487,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "velvetmoustache.TimerApp.TimerApp-Extension";
 				PRODUCT_NAME = "Tаймер";
 				SKIP_INSTALL = YES;
@@ -620,7 +622,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp;
 				PRODUCT_NAME = "Таймер";
 				SWIFT_VERSION = 5.0;
@@ -640,7 +642,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp;
 				PRODUCT_NAME = "Таймер";
 				SWIFT_VERSION = 5.0;
@@ -660,6 +662,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -682,6 +685,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -707,7 +711,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp.watchkitapp;
 				PRODUCT_NAME = "Таймер";
 				SDKROOT = watchos;
@@ -735,7 +739,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = velvetmoustache.TimerApp.watchkitapp;
 				PRODUCT_NAME = "Таймер";
 				SDKROOT = watchos;
